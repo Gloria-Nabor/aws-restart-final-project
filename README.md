@@ -1,6 +1,6 @@
 # aws-restart-final-project
 
-## 🎯Descripción General
+## 📋Descripción General
 
 Este proyecto tiene como objetivo proporcionar información clave para implementar y automatizar servicios en la nube de AWS, específicamente para lanzar un Servidor Web desde la consola de administración de Amazon Web Services (AWS). 
 
@@ -9,6 +9,9 @@ Este proyecto tiene como objetivo proporcionar información clave para implement
     • 190- [JAWS] - Lab - Automatización de implementaciones con AWS CloudFormation (Tareas 1 y 3).
     • 267- [NF]- Lab - Creación de su VPC y lanzamiento de un servidor web
 
+## 📌Abordar los desafíos de la transformación digital:
+
+Esta proyecto aprovecha los beneficios de la nube pública brindando una solución accesible ante las crecientes dificultades que enfrentan los emprendedores y pequeños comercios como son costos elevados o impredecibles, servicios de administración y de escalamiento complejos.  
 
 ## Desarrollo del Proyecto
 
@@ -31,7 +34,7 @@ Implementar infraestructura puede ser desafiante, pero con AWS CloudFormation, p
 
 La plantilla está escrita en un formato llamado YAML, que se utiliza habitualmente para los archivos de configuración. El formato del archivo es importante, incluidas las sangrías y los guiones. Las plantillas de CloudFormation también se pueden escribir en JSON. 
 
-## Acceder al WebServer
+## 🌐Acceder al WebServer
 
 - Abra la URL pública de la instancia ec2 en una navegador para acceder al sitio de prueba.
 

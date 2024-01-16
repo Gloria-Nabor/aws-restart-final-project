@@ -19,9 +19,9 @@ En las guías paso a paso detalla el proceso de configuración de una VPC para l
 
 ## Antes de comenzar, se sugiere tener lo siguiente:
 
-- Una cuenta de AWS (si no, puede registrarse [aquí](https://aws.amazon.com)).
+- Una cuenta de AWS (si no cuenta con ella, puede registrarse [aquí](https://aws.amazon.com)). Tambien puede usar la cuenta del entrenamiento AWS re/start que le permita acceder al sandbox correspondiente.
 
-      AWS ofrece un nivel gratuito durante los primeros 12 meses, lo que la convierte en una solución rentable.
+  AWS ofrece un nivel gratuito durante los primeros 12 meses, lo que la convierte en una solución rentable.
 
 - Conocimientos básicos de la consola de administración y servicios de AWS. 
  
@@ -144,21 +144,28 @@ La plantilla está escrita en un formato llamado YAML, que se utiliza habitualme
 
 - Abra la URL pública de la instancia ec2 en una navegador para acceder al sitio de prueba.
 
-# Extras:
+## Información adicional:
+
 En la lista de recursos del template se incluye un Bucket S3 (Simple Storage Service). 
 CloudFormation asignará un nombre aleatorio para evitar conflictos con buckets existentes.
 
-Considerando su utilidad en el desarrollo de nuevas funciones y siguiendo un enfoque de "infraestructura como código", es una buena práctica almacenar las plantillas en un Bucket S3 para facilitar el versionamiento de la pila en CloudFormation y controlar el acceso.
+**Algunos usos de Amazon S3:**
 
-En el caso de optar por mantener el sitio web estático, otro uso para el Bucket S3 podría ser alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
+• En el desarrollo de nuevas funciones y siguiendo un enfoque de "infraestructura como código", es una buena práctica almacenar las plantillas en un Bucket S3 para facilitar el versionamiento de la pila en CloudFormation y controlar el acceso.
 
-*Puede obtener más información, dentro del contenido del curso de AWS re/star:*
+• En el caso de optar por mantener el sitio web estático, un Bucket S3 puede alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
+
+*Consulte dentro del contenido del curso de AWS re/star:*
 
 **Laboratorios:**
 
     • 191- Actividad de Café: Resolución de problemas en las implementaciones de AWS CloudFormation. (Duración: 75 minutos) 
     • 192- [JAWS] - Lab - [Reto] CloudFormation: Desafío usando AWS CloudFormation para crear una AWS VPC y una instancia de Amazon EC2.
     • Actividad: Crear un sitio web en S3. (Duración: 45 minutos)
+ 
+*Utilice esta página de documentación a modo de ayuda: [Fragmentos de plantillas de Amazon S3](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/quickref-s3.html)*.
+
+*Amplie sus conocimientos y aprenda más de los beneficios de AWS en [Training and Certification](https://aws.amazon.com/training/).* 
 
 <hr>
 

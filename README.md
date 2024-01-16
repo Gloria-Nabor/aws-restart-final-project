@@ -13,7 +13,56 @@ Este proyecto tiene como objetivo proporcionar información clave para implement
 
 Esta proyecto aprovecha los beneficios de la nube pública brindando una solución accesible ante las crecientes dificultades que enfrentan los emprendedores y pequeños comercios como son costos elevados o impredecibles, servicios de administración y de escalamiento complejos.  
 
-## Desarrollo del Proyecto
+## Introducción
+
+En las guías paso a paso detalla el proceso de configuración de una VPC para lanzar un sitio web en una instancia EC2 de AWS. 
+
+## Antes de comenzar, se sugiere tener lo siguiente:
+
+- Una cuenta de AWS (si no, puede registrarse [aquí](https://aws.amazon.com)).
+
+      AWS ofrece un nivel gratuito durante los primeros 12 meses, lo que la convierte en una solución rentable.
+
+- Conocimientos básicos de la consola de administración y servicios de AWS. 
+ 
+## Objetivos:
+
+    • Obtener experiencia práctica en  los servicios de AWS.
+    • Lanzar un servidor web utilizando múltiples recursos de AWS.
+    • Realizar dos implementaciones: manual y automatizada.
+
+# Implementación 1: 
+    • Configuración de VPC e instancia EC2 para alojar un sitio web simple.
+    • Un Bucket de S3.
+    • Un usuario de IAM con acceso a los recursos*.
+
+*Habilidades Clave:* 
+Mejores prácticas en la arquitectura en AWS, aprendiendo cómo encajan los componentes para brindar una solución integral. 
+
+## Entregables: 
+    • Una serie de tutoriales guiados para ayudar a configurar cada recurso.
+    • Diagrama de Arquitectura.
+
+# Implementación 2: 
+    • Infraestructura como código (IaC)
+
+*Habilidades Clave:* 
+Automatización y Recreación de Recursos.
+
+## Entregables:
+    • Recrear los servicios anteriormente mencionados usando CloudFormation.
+    • Demostración de la experiencia de automatización (video).        
+
+# Relevancia del caso empresarial
+
+Café solicita un sitio web básico para promocionarse. Le gustaría comenzar con un sitio web estático que muestre imágenes de productos y detalles de la cafetería, como la ubicación, los horarios de atención y el número de teléfono. 
+
+En el futuro cercano, se podrán implementar funciones como pedidos en línea, seguimiento del historial de pedidos, generación y entrega de informes de ventas, campañas de marketing, y gestión de cortes del servidor con alta disponibilidad y conmutación por error. 
+
+## Infraestructura Empresarial:
+El proyecto presenta una infraestructura de nivel empresarial, lo que significa que, a futuro, podrá expandirse aprovechando otros servicios de AWS. Se podrían incorporar funcionalidades como el escalado automático, copias de seguridad diarias, restauraciones sencillas, actualizaciones administradas, entre otras implementaciones posibles. Esto garantiza que la infraestructura sea flexible y pueda adaptarse a las cambiantes necesidades del negocio, considerando que “Café” tiene planes de expansión.
+
+# Desarrollo del Proyecto
 
   - **Implementación manual de los servicios siguientes:**
     - Virtual Private Cloud (VPC) 
@@ -23,20 +72,93 @@ Esta proyecto aprovecha los beneficios de la nube pública brindando una soluci�
       
   - **Automatización con AWS CloudFormation para demostrar la eficiencia de esta tecnología.**
 
+# Propuesta técnica
 
-## 🚀 AWS CloudFormation: Automatización de Infraestructura
+El cliente ha solicitado crear un sitio web. Comenzar el proyecto con un sitio web estático. 
+
+*Sitio web básico: requisitos técnicos*
+
+**La implementación técnica inicial debe incluir:**
+1. Servidor web que almacenará la información del Café (archivos HTML e imágenes*)
+2. Un usuario de IAM con acceso a los recursos.
+3. Una VPC y una instancia EC2 configurados para alojar un sitio web simple.
+
+## Entrega al Cliente:
+
+    • Una Solución económica, resiliente y segura, basada en la nube con la posibilidad de escalar según la demanda.
+    • Una dirección IP pública/URL para acceder al sitio web de Café.
+Este enfoque integral busca proporcionar soluciones técnicas efectivas y enfrentar desafíos empresariales con las mejores prácticas de AWS.
+
+# Arquitectura del Proyecto:
+
+## Virtual Private Cloud (VPC)
+
+La infraestructura del proyecto se basa en una VPC, proporcionando un entorno aislado y controlado para los recursos de la aplicación. 
+
+*Componentes clave asociados:*
+
+    - Tabla de ruteo: Controla el tráfico entre la subred e internet.
+    - Internet Gateway (IGW): Permite la comunicación entre instancias en la VPC e internet.
+
+## Instancia EC2
+
+El sitio web está alojado en una instancia EC2, proporcionando un entorno de alojamiento flexible y personalizable.
+
+*Componentes clave asociados:*
+
+    - Grupos de Seguridad: Gestiona las reglas de tráfico entrante y saliente a la instancia, proporcionando un control detallado sobre la seguridad y accesibilidad.
+
+     Estos recursos fundamentales de AWS trabajan juntos para crear un entorno de alojamiento del sitio web en AWS. 
+
+## Anexo del Diagrama de Arquitectura propuesta.
+
+# 🚀 AWS CloudFormation: Automatización de Infraestructura
 
 Implementar infraestructura puede ser desafiante, pero con AWS CloudFormation, puede definirse en una plantilla para que los recursos de implementen automáticamente. 
 
 - Este proyecto incluye la implementación de una pila de AWS CloudFormation con una Nube Privada Virtual (VPC) y un grupo de seguridad, junto con una instancia de Amazon Elastic Compute Cloud (EC2). 
 
-## template1.yaml
+# template1.yaml
 
-La plantilla está escrita en un formato llamado YAML, que se utiliza habitualmente para los archivos de configuración. El formato del archivo es importante, incluidas las sangrías y los guiones. Las plantillas de CloudFormation también se pueden escribir en JSON. 
+La plantilla está escrita en un formato llamado YAML, que se utiliza habitualmente para los archivos de configuración. El formato del archivo es importante, incluidas las sangrías y los guiones. Las plantillas de CloudFormation también se pueden escribir en JSON.
+
+## Se configuran los recursos siguientes:
+## Parámetros
+
+    • VPC Rango CIDR 
+    • Opción de Zona de Disponibilidad
+    • Opciones Subnet CIDR
+    • Nombre de Instancia
+    • Tipo de Instancia- Forzado a t3.micro
+    • Nombre clave/KeyName (default del laboratorio)
+
+## Recursos
+
+    • VPC
+    • Internet Gateway
+    • Rutas y tabla de enrutamiento para el tráfico de Internet.
+    • Subnet [Publica]
+    • Grupo de seguridad para permitir el tráfico de Internet.
 
 ## 🌐Acceder al WebServer
 
 - Abra la URL pública de la instancia ec2 en una navegador para acceder al sitio de prueba.
+
+# Extras:
+En la lista de recursos del template se incluye un Bucket S3 (Simple Storage Service). 
+CloudFormation asignará un nombre aleatorio para evitar conflictos con buckets existentes.
+
+Considerando su utilidad en el desarrollo de nuevas funciones y siguiendo un enfoque de "infraestructura como código", es una buena práctica almacenar las plantillas en un Bucket S3 para facilitar el versionamiento de la pila en CloudFormation y controlar el acceso.
+
+En el caso de optar por mantener el sitio web estático, otro uso para el Bucket S3 podría ser alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
+
+*Puede obtener más información, dentro del contenido del curso de AWS re/star:*
+
+**Laboratorios:**
+
+    • 191- Actividad de Café: Resolución de problemas en las implementaciones de AWS CloudFormation. (Duración: 75 minutos) 
+    • 192- [JAWS] - Lab - [Reto] CloudFormation: Desafío usando AWS CloudFormation para crear una AWS VPC y una instancia de Amazon EC2.
+    • Actividad: Crear un sitio web en S3. (Duración: 45 minutos)
 
 <hr>
 

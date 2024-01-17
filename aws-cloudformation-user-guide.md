@@ -42,7 +42,7 @@ Ingrese a la cuenta de entrenamiento del curso de AWS re/start y localice el lab
 
 Se implementará una pila de CloudFormation que creará una VPC, un grupo de seguridad, y una instancia EC2.
 
-5. Haga clic derecho en este enlace y descargue la plantilla de CloudFormation: template1.yaml
+5. Haga clic derecho sobre ste enlace y descargue la plantilla de CloudFormation: [template1.yaml](url)
 
 6. A  modo informativo, puede abrir este archivo en un editor de texto (no en un procesador de textos).
     La plantilla está escrita en un formato llamado [YAML](https://en.wikipedia.org/wiki/YAML), que se utiliza habitualmente para los archivos de configuración. El formato del archivo es importante, incluidos los guiones y las sangrías (dos espacios para cada sangría).

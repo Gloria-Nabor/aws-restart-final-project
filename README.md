@@ -163,7 +163,7 @@ CloudFormation asignará un nombre aleatorio para evitar conflictos con buckets 
     • 192- [JAWS] - Lab - [Reto] CloudFormation: Desafío usando AWS CloudFormation para crear una AWS VPC y una instancia de Amazon EC2.
     • Actividad: Crear un sitio web en S3. (Duración: 45 minutos)
  
-*Utilice esta página de documentación a modo de ayuda: [Fragmentos de plantillas de Amazon S3](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/quickref-s3.html)*.
+*Utilice las páginas de documentación a modo de ayuda: [Fragmentos de plantillas de Amazon S3](https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/quickref-s3.html) y [AWS::EC2::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html)*.
 
 *Amplie sus conocimientos y aprenda más de los beneficios de AWS en [Training and Certification](https://aws.amazon.com/training/).* 
 

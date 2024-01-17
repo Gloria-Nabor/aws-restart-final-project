@@ -1,9 +1,12 @@
 # Guía: automatización con CloudFormation
 
-Esta guia le ayudará a implementar un pila de CloudFormation al definir los recursos dentro de una plantilla.
+Esta guia le ayudará a crear una pila de CloudFormation para implementar los recursos definidos dentro de una plantilla.
 
 ## Objetivo
-  • Implementar una pila de AWS CloudFormation con una nube privada virtual (VPC), un grupo de seguridad y una Amazon Elastic Compute Cloud (EC2) definidos, como se muestra en este diagrama:
+  • Implementar una pila de AWS CloudFormation con una nube privada virtual (VPC), una Amazon Elastic Compute Cloud (EC2), un grupo de seguridad, entre otros recursos, como se muestra en este diagrama:
+
+  ![aws-architecture-diagram](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/2deefd25-cc27-40a6-8a18-e9e91d7319db)
+
       
 ## Duración
   • El tiempo estimado para completar esta práctica es de 30 minutos.
@@ -40,7 +43,7 @@ Ingrese a la cuenta de entrenamiento del curso de AWS re/start y localice el lab
 
 ## Tarea: Implementar una pila de AWS CloudFormation
 
-Se implementará una pila de CloudFormation que creará una VPC, un grupo de seguridad, y una instancia EC2.
+Se implementará una pila de CloudFormation que creará una VPC, una instancia EC2, un grupo de seguridad entre otros recursos necesarios para lanzar un servidor web.
 
 5. Haga clic derecho sobre ste enlace y descargue la plantilla de CloudFormation: [template1.yaml](url)
 
@@ -170,6 +173,8 @@ Cuando haya terminado de observar el contenido de la plantilla, podrá utilizarl
 
 ![cloudFormation-createStack](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/3fa022a5-6060-4f5e-83c2-b8d03a59970c)
 
+![cloudFormation-createStack-webServer](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/b19f74b8-ad37-4a1e-9ce7-3cc2f1a3eaf5)
+
 
 # Tareas opcionales:
 
@@ -181,13 +186,18 @@ Cuando haya terminado de observar el contenido de la plantilla, podrá utilizarl
        
   - Verifique el bucket creado en **S3**.
 
+![cloudFormation-createStack-events](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/f7c20710-049a-4da5-843b-1556e61d5b57)
+
+![cloudFormation-createStack-resources](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/44468dd3-4cf7-478a-9248-bc3c528dfcff)
+
+
 ## Eliminar la pila
 
 Cuando se elimina una pila de CloudFormation, este eliminará automáticamente los recursos que creó.
        
   - A continuación, vuelva a la consola de CloudFormation. Ahora procederá a eliminar la pila.
     
-    - En la consola de CloudFormation, seleccione ☑*Lab* (Laboratorio).
+    - En la consola de CloudFormation, seleccione ☑*Lab*, el nombre de la pila.
    
     - Haga clic en **Delete** (Eliminar) y luego, cuando se le solicite, haga clic en `Delete stack` (Eliminar pila).
    
@@ -196,5 +206,6 @@ Cuando se elimina una pila de CloudFormation, este eliminará automáticamente l
 ## Verificar recursos eliminados
 
   - Compruebe que el S3 bucket de Amazon, la instancia de Amazon EC2 y la VPC se hayan eliminado.
+    
 
-***Nota:*** La plantilla template1.yaml también le permite crear la pila de AWS CloudFormation mediante la AWS CLI. 
+***Nota:*** También es posible crear la pila de AWS CloudFormationLa con la plantilla *template1.yaml* mediante la **Interfaz de la línea de comandos de AWS** (AWS CLI). 

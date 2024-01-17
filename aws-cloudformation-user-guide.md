@@ -1,6 +1,6 @@
 # Guía: automatización con CloudFormation
 
-Esta guia nos ayudará a implementar un pila de CloudFormation al definir los recursos dentro de una plantilla.
+Esta guia le ayudará a implementar un pila de CloudFormation al definir los recursos dentro de una plantilla.
 
 ## Objetivo
   • Implementar una pila de AWS CloudFormation con una nube privada virtual (VPC), un grupo de seguridad y una Amazon Elastic Compute Cloud (EC2) definidos, como se muestra en este diagrama:
@@ -14,7 +14,7 @@ Esta guia nos ayudará a implementar un pila de CloudFormation al definir los re
 
 Inicie sesión con su cuenta de AWS [aquí](https://signin.aws.amazon.com), debe elegir su tipo de usuario, si es [usuario raíz](https://docs.aws.amazon.com/es_es/signin/latest/userguide/introduction-to-root-user-sign-in-tutorial.html), capture el correo electrónico y la contraseña, o si es un [usuario de IAM](https://docs.aws.amazon.com/es_es/signin/latest/userguide/introduction-to-iam-user-sign-in-tutorial.html), ingrese ID o alias, nombre de usuario de IAM y contraseña.
 
-Haga clic aquí para pasar a la siguiente tarea.
+Haga clic [aquí](#tarea-implementar-una-pila-de-aws-cloudformation) para pasar a la siguiente tarea.
 
 **• Opción 2:** Estudiantes de  AWS re/start
 

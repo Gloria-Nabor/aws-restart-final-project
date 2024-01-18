@@ -6,7 +6,7 @@ Este proyecto tiene como objetivo proporcionar información clave para implement
 
  **Proyecto basado en los laboratorios**:
  
-    • 190- [JAWS] - Lab - Automatización de implementaciones con AWS CloudFormation (Tareas 1 y 3).
+    • 190- [JAWS] - Lab - Automatización de implementaciones con **AWS CloudFormation** (Tareas 1 y 3).
     • 267- [NF]- Lab - Creación de su VPC y lanzamiento de un servidor web
 
 ## 📌Abordar los desafíos de la transformación digital:
@@ -15,7 +15,7 @@ Esta proyecto aprovecha los beneficios de la nube pública brindando una soluci�
 
 ## Introducción
 
-En las guías paso a paso detalla el proceso de configuración de una VPC para lanzar un sitio web en una instancia EC2 de AWS. 
+En las guías paso a paso detalla el proceso de configuración de una **VPC** para lanzar un sitio web en una instancia **EC2** de AWS. 
 
 ## Antes de comenzar, se sugiere tener lo siguiente:
 
@@ -27,7 +27,7 @@ En las guías paso a paso detalla el proceso de configuración de una VPC para l
  
 ## Objetivos:
 
-    • Obtener experiencia práctica en  los servicios de AWS.
+    • Obtener experiencia práctica en los servicios de AWS.
     • Lanzar un servidor web utilizando múltiples recursos de AWS.
     • Realizar dos implementaciones: manual y automatizada.
 
@@ -144,6 +144,15 @@ La plantilla está escrita en un formato llamado YAML, que se utiliza habitualme
 
 - Abra la URL pública de la instancia ec2 en una navegador para acceder al sitio de prueba.
 
+# Listado de Archivos:
+- Plantilla CloudFormation [template1.yaml](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/template1.yaml)
+   
+- Diseño de Pila CloudFormation [template1-designer.png](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/template1-designer.png)
+   
+- Diagrama de Arquitectura [aws-architecture-diagram](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/2deefd25-cc27-40a6-8a18-e9e91d7319db)
+
+- Guía de automatización con Cloud Formation [aws-cloudformation-user-guide.md](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/aws-cloudformation-user-guide.md)
+
 ## Información adicional:
 
 En la lista de recursos del template se incluye un Bucket S3 (Simple Storage Service). 
@@ -151,9 +160,9 @@ CloudFormation asignará un nombre aleatorio para evitar conflictos con buckets 
 
 **Algunos usos de Amazon S3:**
 
-• En el desarrollo de nuevas funciones y siguiendo un enfoque de "infraestructura como código", es una buena práctica almacenar las plantillas en un Bucket S3 para facilitar el versionamiento de la pila en CloudFormation y controlar el acceso.
+- En el desarrollo de nuevas funciones y siguiendo un enfoque de "infraestructura como código", es una buena práctica almacenar las plantillas en un Bucket S3 para facilitar el versionamiento de la pila en CloudFormation y controlar el acceso.
 
-• En el caso de optar por mantener el sitio web estático, un Bucket S3 puede alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
+- En el caso de optar por mantener el sitio web estático, un Bucket S3 puede alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
 
 *Consulte dentro del contenido del curso de AWS re/star:*
 

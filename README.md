@@ -15,7 +15,9 @@ Esta proyecto aprovecha los beneficios de la nube pública brindando una soluci�
 
 ## Introducción
 
-En las guías paso a paso detalla el proceso de configuración de una **VPC** para lanzar un sitio web en una instancia **EC2** de AWS. 
+AWS CloudFormation es un servicio que ofrece una manera sencilla de crear una colección de recursos de AWS.
+
+En la [guía de automatización con Cloud Formation]([aws-cloudformation-user-guide.md](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/aws-cloudformation-user-guide.md) se datalla paso a paso el proceso de configuración de una **VPC** para lanzar un sitio web en una instancia **EC2**. 
 
 ## Antes de comenzar, se sugiere tener lo siguiente:
 
@@ -32,26 +34,25 @@ En las guías paso a paso detalla el proceso de configuración de una **VPC** pa
     • Realizar dos implementaciones: manual y automatizada.
 
 # Implementación 1: 
-    • Configuración de VPC e instancia EC2 para alojar un sitio web simple.
+    • Configuración de una VPC e instancia EC2 para alojar un sitio web simple.
     • Un Bucket de S3.
-    • Un usuario de IAM con acceso a los recursos*.
 
 *Habilidades Clave:* 
 Mejores prácticas en la arquitectura en AWS, aprendiendo cómo encajan los componentes para brindar una solución integral. 
 
 ## Entregables: 
-    • Una serie de tutoriales guiados para ayudar a configurar cada recurso.
-    • Diagrama de Arquitectura.
+    • Una serie de guías para ayudar a configurar cada recurso.
+    • Un video tutorial.
 
 # Implementación 2: 
     • Infraestructura como código (IaC)
 
 *Habilidades Clave:* 
-Automatización y Recreación de Recursos.
+Automatización para creación de un conjunto Recursos.
 
 ## Entregables:
-    • Recrear los servicios anteriormente mencionados usando CloudFormation.
-    • Demostración de la experiencia de automatización (video).        
+    • Crear una pila para implementar los servicios anteriormente mencionados usando CloudFormation.
+    • Video demo de la experiencia de automatización.        
 
 # Relevancia del caso empresarial
 
@@ -60,7 +61,10 @@ Café solicita un sitio web básico para promocionarse. Le gustaría comenzar co
 En el futuro cercano, se podrán implementar funciones como pedidos en línea, seguimiento del historial de pedidos, generación y entrega de informes de ventas, campañas de marketing, y gestión de cortes del servidor con alta disponibilidad y conmutación por error. 
 
 ## Infraestructura Empresarial:
-El proyecto presenta una infraestructura de nivel empresarial, lo que significa que, a futuro, podrá expandirse aprovechando otros servicios de AWS. Se podrían incorporar funcionalidades como el escalado automático, copias de seguridad diarias, restauraciones sencillas, actualizaciones administradas, entre otras implementaciones posibles. Esto garantiza que la infraestructura sea flexible y pueda adaptarse a las cambiantes necesidades del negocio, considerando que “Café” tiene planes de expansión.
+El proyecto presenta una infraestructura de nivel empresarial, lo que significa que, a futuro, podrá expandirse aprovechandovpc
+
+
+otros servicios de AWS. A futuro, es posible incorporar funcionalidades como el escalado automático, copias de seguridad diarias, restauraciones sencillas, actualizaciones administradas, entre otras implementaciones posibles. Esto garantiza que la infraestructura sea flexible y pueda adaptarse a las cambiantes necesidades del negocio, considerando que “Café” tiene planes de expansión.
 
 # Desarrollo del Proyecto
 
@@ -68,7 +72,6 @@ El proyecto presenta una infraestructura de nivel empresarial, lo que significa 
     - Virtual Private Cloud (VPC) 
     - Instancia de Amazon Elastic Compute Cloud (Amazon EC2)
     - Bucket de Amazon Simple Storage Service (Amazon S3)*
-    - AWS Identity and Access Management (IAM)*
       
   - **Automatización con AWS CloudFormation para demostrar la eficiencia de esta tecnología.**
 
@@ -80,8 +83,7 @@ El cliente ha solicitado crear un sitio web. Comenzar el proyecto con un sitio w
 
 **La implementación técnica inicial debe incluir:**
 1. Servidor web que almacenará la información del Café (archivos HTML e imágenes*)
-2. Un usuario de IAM con acceso a los recursos.
-3. Una VPC y una instancia EC2 configurados para alojar un sitio web simple.
+2. Una VPC y una instancia EC2 configuradas para alojar un sitio web simple.
 
 ## Entrega al Cliente:
 
@@ -110,17 +112,18 @@ El sitio web está alojado en una instancia EC2, proporcionando un entorno de al
 
      Estos recursos fundamentales de AWS trabajan juntos para crear un entorno de alojamiento del sitio web en AWS. 
 
-## Anexo del Diagrama de Arquitectura propuesta.
+## Anexo del Diagrama de Arquitectura [aquí](https://github.com/Gloria-Nabor/aws-restart-final-project/assets/114413852/2deefd25-cc27-40a6-8a18-e9e91d7319db).
 
 # 🚀 AWS CloudFormation: Automatización de Infraestructura
 
-Implementar infraestructura puede ser desafiante, pero con AWS CloudFormation, puede definirse en una plantilla para que los recursos de implementen automáticamente. 
+Implementar infraestructura puede ser desafiante, pero con AWS CloudFormation, puede definirse en una plantilla para que los recursos se implementen automáticamente. 
 
 - Este proyecto incluye la implementación de una pila de AWS CloudFormation con una Nube Privada Virtual (VPC) y un grupo de seguridad, junto con una instancia de Amazon Elastic Compute Cloud (EC2). 
 
 # template1.yaml
 
-La plantilla está escrita en un formato llamado YAML, que se utiliza habitualmente para los archivos de configuración. El formato del archivo es importante, incluidas las sangrías y los guiones. Las plantillas de CloudFormation también se pueden escribir en JSON.
+
+La plantilla [template1.yaml](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/template1.yaml) está escrita en un formato llamado YAML, que se utiliza habitualmente para los archivos de configuración. El formato del archivo es importante, incluidas las sangrías y los guiones. Las plantillas de CloudFormation también se pueden escribir en JSON.
 
 ## Se configuran los recursos siguientes:
 ## Parámetros

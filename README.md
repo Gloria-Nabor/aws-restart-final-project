@@ -58,13 +58,10 @@ Automatización para creación de un conjunto Recursos.
 
 Café solicita un sitio web básico para promocionarse. Le gustaría comenzar con un sitio web estático que muestre imágenes de productos y detalles de la cafetería, como la ubicación, los horarios de atención y el número de teléfono. 
 
-En el futuro cercano, se podrán implementar funciones como pedidos en línea, seguimiento del historial de pedidos, generación y entrega de informes de ventas, campañas de marketing, y gestión de cortes del servidor con alta disponibilidad y conmutación por error. 
+En el futuro cercano, se podrán implementar funciones como pedidos en línea, seguimiento del historial de pedidos, generación y entrega de informes de ventas, campañas de marketing, entre otras necesidades. 
 
 ## Infraestructura Empresarial:
-El proyecto presenta una infraestructura de nivel empresarial, lo que significa que, a futuro, podrá expandirse aprovechandovpc
-
-
-otros servicios de AWS. A futuro, es posible incorporar funcionalidades como el escalado automático, copias de seguridad diarias, restauraciones sencillas, actualizaciones administradas, entre otras implementaciones posibles. Esto garantiza que la infraestructura sea flexible y pueda adaptarse a las cambiantes necesidades del negocio, considerando que “Café” tiene planes de expansión.
+El proyecto presenta una infraestructura de nivel empresarial, lo que significa que, a futuro, podrá expandirse aprovechando otros servicios de AWS. Por ejemplo, será posible incorporar funcionalidades como el escalado automático, copias de seguridad diarias, restauraciones sencillas, actualizaciones administradas, entre otras implementaciones posibles. Esto garantiza que la infraestructura sea flexible y pueda adaptarse al crecimiento del negocio, considerando que “Café” tiene planes de expansión.
 
 # Desarrollo del Proyecto
 

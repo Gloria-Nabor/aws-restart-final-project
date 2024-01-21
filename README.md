@@ -52,16 +52,8 @@ Automatización para creación de un conjunto Recursos.
 
 ## Entregables:
     • Crear una pila para implementar los servicios anteriormente mencionados usando CloudFormation.
-    • Video demo de la experiencia de automatización.        
-
-# Relevancia del caso empresarial
-
-Café solicita un sitio web básico para promocionarse. Le gustaría comenzar con un sitio web estático que muestre imágenes de productos y detalles de la cafetería, como la ubicación, los horarios de atención y el número de teléfono. 
-
-En el futuro cercano, se podrán implementar funciones como pedidos en línea, seguimiento del historial de pedidos, generación y entrega de informes de ventas, campañas de marketing, entre otras necesidades. 
-
-## Infraestructura Empresarial:
-El proyecto presenta una infraestructura de nivel empresarial, lo que significa que, a futuro, podrá expandirse aprovechando otros servicios de AWS. Por ejemplo, será posible incorporar funcionalidades como el escalado automático, copias de seguridad diarias, restauraciones sencillas, actualizaciones administradas, entre otras implementaciones posibles. Esto garantiza que la infraestructura sea flexible y pueda adaptarse al crecimiento del negocio, considerando que “Café” tiene planes de expansión.
+    • Video demo de la experiencia de automatización.
+    • Una dirección IP pública/URL para acceder al sitio web.
 
 # Desarrollo del Proyecto
 
@@ -74,19 +66,9 @@ El proyecto presenta una infraestructura de nivel empresarial, lo que significa 
 
 # Propuesta técnica
 
-El cliente ha solicitado crear un sitio web. Comenzar el proyecto con un sitio web estático. 
-
-*Sitio web básico: requisitos técnicos*
-
 **La implementación técnica inicial debe incluir:**
 1. Servidor web que almacenará la información del Café (archivos HTML e imágenes*)
 2. Una VPC y una instancia EC2 configuradas para alojar un sitio web simple.
-
-## Entrega al Cliente:
-
-    • Una Solución económica, resiliente y segura, basada en la nube con la posibilidad de escalar según la demanda.
-    • Una dirección IP pública/URL para acceder al sitio web de Café.
-Este enfoque integral busca proporcionar soluciones técnicas efectivas y enfrentar desafíos empresariales con las mejores prácticas de AWS.
 
 # Arquitectura del Proyecto:
 
@@ -162,7 +144,7 @@ CloudFormation asignará un nombre aleatorio para evitar conflictos con buckets 
 
 - En el desarrollo de nuevas funciones y siguiendo un enfoque de "infraestructura como código", es una buena práctica almacenar las plantillas en un Bucket S3 para facilitar el versionamiento de la pila en CloudFormation y controlar el acceso.
 
-- En el caso de optar por mantener el sitio web estático, un Bucket S3 puede alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
+- En el caso de optar por un sitio web estático, un Bucket S3 puede alojar el archivo index.html y demás contenido, permitiendo el acceso mediante la URL asignada por Amazon S3.
 
 *Consulte dentro del contenido del curso de AWS re/star:*
 

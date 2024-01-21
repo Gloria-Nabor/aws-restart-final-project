@@ -1,5 +1,10 @@
 # aws-restart-final-project
 
+
+##  <p align="center">*Creación de un sitio web estático: Paso a Paso vs AWS CloudFormation* 
+
+<img width="20px" src="https://avatars.githubusercontent.com/u/4792552?s=200&v=4" alt="Logo Notion"> <a href="https://aws-restart-final-project.notion.site/Creaci-n-de-un-sitio-web-est-tico-Paso-a-Paso-vs-AWS-CloudFormation-d97752c98e30436699be39254a476b7e?pvs=4">Notion Project</a>
+
 ## 📋Descripción General
 
 Este proyecto tiene como objetivo proporcionar información clave para implementar y automatizar servicios en la nube de AWS, específicamente para lanzar un Servidor Web desde la consola de administración de Amazon Web Services (AWS). 

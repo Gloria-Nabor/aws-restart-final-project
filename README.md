@@ -5,6 +5,8 @@
 
 <img width="20px" src="https://avatars.githubusercontent.com/u/4792552?s=200&v=4" alt="Logo Notion"> <a href="https://aws-restart-final-project.notion.site/Creaci-n-de-un-sitio-web-est-tico-Paso-a-Paso-vs-AWS-CloudFormation-d97752c98e30436699be39254a476b7e?pvs=4">Notion Project</a>
 
+<img width="20px" src="https://raw.githubusercontent.com/github/explore/8f19e4dbbf13418dc1b1d58bb265953553c15a46/topics/google-slides/google-slides.png" alt="Logo Google Slides"><a href="https://docs.google.com/presentation/d/1AG8QbbuRytw3PwrAkBFSZF-6heFzJzwp/edit?usp=drive_link&ouid=105080541778922930260&rtpof=true&sd=true">Presentación en Google Slides</a>
+
 ## 📋Descripción General
 
 Este proyecto tiene como objetivo proporcionar información clave para implementar y automatizar servicios en la nube de AWS, específicamente para lanzar un Servidor Web desde la consola de administración de Amazon Web Services (AWS). 
@@ -22,7 +24,7 @@ Esta proyecto aprovecha los beneficios de la nube pública brindando una soluci�
 
 AWS CloudFormation es un servicio que ofrece una manera sencilla de crear una colección de recursos de AWS.
 
-En la [guía de automatización con Cloud Formation]([aws-cloudformation-user-guide.md](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/aws-cloudformation-user-guide.md) se datalla paso a paso el proceso de configuración de una **VPC** para lanzar un sitio web en una instancia **EC2**. 
+En la guía de automatización con Cloud Formation [aws-cloudformation-user-guide.md](https://github.com/Gloria-Nabor/aws-restart-final-project/blob/ca1795436d1b1cc3822408d63c3a46546ed8c371/aws-cloudformation-user-guide.md) se datalla paso a paso el proceso de configuración de una **VPC** para lanzar un sitio web en una instancia **EC2**. 
 
 ## Antes de comenzar, se sugiere tener lo siguiente:
 
